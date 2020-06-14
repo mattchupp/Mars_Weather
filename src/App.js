@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Explaination from './components/Explaination'; 
+import Explanation from './components/Explanation'; 
 
 function App() {
 
 
   return (
     <div className="App">
-      <Explaination />
+      <Explanation />
     </div>
   );
 }
