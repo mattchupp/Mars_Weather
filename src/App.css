@@ -28,4 +28,36 @@ p {
   color: white; 
 }
 
+.weather-grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.weather-grid-center {
+  display: grid; 
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+/* utility */
+.d-flex {
+  display: flex; 
+  height: 100%; 
+  width: 100%; 
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-centered {
+  align-items: center;
+}
+.justify-end {
+  justify-content: end;
+}
 
