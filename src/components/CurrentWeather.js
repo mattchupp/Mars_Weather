@@ -9,6 +9,7 @@ function CurrentWeather(props) {
     return c * 9/5 + 32; 
   }
 
+  // font-weight bold for titles
   const bold = {
     'fontWeight': 'bold'
   }

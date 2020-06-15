@@ -70,22 +70,3 @@ p {
   text-align: center;
 }
 
-/* utility */
-.d-flex {
-  display: flex; 
-  height: 100%; 
-  width: 100%; 
-}
-.flex-column {
-  flex-direction: column;
-}
-.flex-row {
-  flex-direction: row;
-}
-.flex-centered {
-  align-items: center;
-}
-.justify-end {
-  justify-content: end;
-}
-

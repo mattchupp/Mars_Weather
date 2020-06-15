@@ -23,7 +23,7 @@ function Forcast() {
   
   }, [])
 
-
+  // if data is fetched, display
   if(gotData) {
     return (
       <div>
