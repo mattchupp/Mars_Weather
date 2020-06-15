@@ -7,7 +7,7 @@ function Explanation() {
   const [result, setResult] = useState([]); 
 
   useEffect(() => {
-    Axios.get('https://api.nasa.gov/planetary/apod?api_key=jWehFsIwgIfJfBXGa6ruucAM1gJ3MRunSisfdmO9')
+    Axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_INSIGHT_KEY}`)
      .then(res => {
         console.log(res.data); 
         setResult(res.data)
