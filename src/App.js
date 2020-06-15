@@ -7,10 +7,10 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="app-container">
       {/* <Explanation /> */}
       <Forcast />
-
+      
     </div>
   );
 }
