@@ -31,7 +31,6 @@ function Forcast() {
   if(gotData) {
     return (
       <div>
-        <h1>Weather</h1>
         <CurrentWeather 
           sol={weather.sol_keys[6]}
           date={weather[weather.sol_keys[6]].First_UTC}
@@ -40,11 +39,7 @@ function Forcast() {
           windDir={weather[weather.sol_keys[6]].WD.most_common.compass_point}
           windDirDegrees={weather[weather.sol_keys[6]].WD.most_common.compass_degrees}
         />
-        
-        {/* <p>Max Temp {weather[weather.sol_keys[6]].AT.mx}</p> */}
       
-        
-  
       </div>
     )
   } else {
