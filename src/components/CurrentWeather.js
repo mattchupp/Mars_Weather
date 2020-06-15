@@ -9,6 +9,10 @@ function CurrentWeather(props) {
     return c * 9/5 + 32; 
   }
 
+  const bold = {
+    'fontWeight': 'bold'
+  }
+
   return (
     <div className="current-weather-container">
       <div className="weather-card">
@@ -19,8 +23,8 @@ function CurrentWeather(props) {
           </div>
           <div>
             <h2>Temp</h2>
-            <p>Max: {Math.round(cToF(props.maxTemp))} &deg;F</p>
-            <p>Min: {Math.round(cToF(props.minTemp))} &deg;F</p>
+            <p><span style={bold}>Max:</span> {Math.round(cToF(props.maxTemp))} &deg;F</p>
+            <p><span style={bold}>Min:</span> {Math.round(cToF(props.minTemp))} &deg;F</p>
           </div>
       
           <div>
@@ -30,8 +34,7 @@ function CurrentWeather(props) {
         
           <div>
             <h2>Wind</h2>
-            <p>Wind Direction: {props.windDir}</p>
-            <p>Wind Direction Degrees: {props.windDirDegrees}</p>
+            <p><span style={bold}>Direction:</span> {props.windDir}</p>
           </div>
         
         </div>

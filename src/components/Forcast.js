@@ -33,7 +33,6 @@ function Forcast() {
           maxTemp={weather[weather.sol_keys[6]].AT.mx}
           minTemp={weather[weather.sol_keys[6]].AT.mn}
           windDir={weather[weather.sol_keys[6]].WD.most_common.compass_point}
-          windDirDegrees={weather[weather.sol_keys[6]].WD.most_common.compass_degrees}
           season={weather[weather.sol_keys[6]].Season}
         />
       </div>
