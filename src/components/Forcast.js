@@ -19,16 +19,16 @@ function Forcast() {
         console.log(error); 
      })
     
-     getSolData(); 
+    //  getSolData(); 
   }, [])
 
-  function getSolData() {
-    let weatherBySol = {
-      sol_keys: weather.sol_keys,
-      validity_checks: weather.validity_checks
-    }
-    console.log(weatherBySol)
-  }
+  // function getSolData() {
+  //   let weatherBySol = {
+  //     sol_keys: weather.sol_keys,
+  //     validity_checks: weather.validity_checks
+  //   }
+  //   console.log(weatherBySol)
+  // }
 
 
   if(gotData) {
