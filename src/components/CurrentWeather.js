@@ -3,6 +3,12 @@ import moment from 'moment';
 
 
 function CurrentWeather(props) {
+
+  // convert c to f
+  function cToF(c) {
+    return c * 9/5 + 32; 
+  }
+
   return (
     <div className="current-weather-container">
       <div className="weather-card">
@@ -13,8 +19,8 @@ function CurrentWeather(props) {
           </div>
           <div>
             <h2>Temp</h2>
-            <p>Max: {props.maxTemp} &deg;C</p>
-            <p>Min: {props.minTemp} &deg;C</p>
+            <p>Max: {Math.round(cToF(props.maxTemp))} &deg;F</p>
+            <p>Min: {Math.round(cToF(props.minTemp))} &deg;F</p>
           </div>
       
           <div>
