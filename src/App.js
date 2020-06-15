@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Explanation from './components/Explanation'; 
+// import Explanation from './components/Explanation'; 
 import Forcast from './components/Forcast'; 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <Explanation />
+      {/* <Explanation /> */}
       <Forcast />
 
     </div>
