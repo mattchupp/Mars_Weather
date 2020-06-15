@@ -1,5 +1,5 @@
 import React from 'react'; 
-
+import moment from 'moment'; 
 
 
 function CurrentWeather(props) {
@@ -9,7 +9,7 @@ function CurrentWeather(props) {
         <div className="weather-grid">
           <div>
             <h1>Sol {props.sol}</h1>
-            <p>{props.date}</p>
+            <p>{moment.utc(props.date).format('LL')}</p>
           </div>
           <div>
             <h2>Temp</h2>

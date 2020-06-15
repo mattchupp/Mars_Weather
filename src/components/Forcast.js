@@ -14,11 +14,7 @@ function Forcast() {
      .then(res => {
         console.log(res.data); 
         setWeather(res.data)
-        // console.log(weather)
         setGotData(true); 
-
-        // let currentSol = res.data.sol_keys[6]; 
-        // console.log(res.data[549].AT.mx)
      })
      .then(error => {
         console.log(error); 
@@ -40,7 +36,6 @@ function Forcast() {
           windDirDegrees={weather[weather.sol_keys[6]].WD.most_common.compass_degrees}
           season={weather[weather.sol_keys[6]].Season}
         />
-      
       </div>
     )
   } else {
