@@ -28,12 +28,12 @@ function Forcast() {
     return (
       <div>
         <CurrentWeather 
-          sol={weather.sol_keys[6]}
-          date={weather[weather.sol_keys[6]].First_UTC}
-          maxTemp={weather[weather.sol_keys[6]].AT.mx}
-          minTemp={weather[weather.sol_keys[6]].AT.mn}
-          windDir={weather[weather.sol_keys[6]].WD.most_common.compass_point}
-          season={weather[weather.sol_keys[6]].Season}
+          sol={weather.sol_keys[3]}
+          date={weather[weather.sol_keys[3]].First_UTC}
+          maxTemp={weather[weather.sol_keys[3]].AT.mx}
+          minTemp={weather[weather.sol_keys[3]].AT.mn}
+          windDir={weather[weather.sol_keys[3]].WD.most_common.compass_point}
+          season={weather[weather.sol_keys[3]].Season}
         />
       </div>
     )
